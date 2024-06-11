@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Properti - SIPS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="info-box">
+            <h1>Prediksi Harga Properti dengan Memanfaatkan Informasi Siteplan</h1>
+            <p>Oleh : Kelompok 5 Kelas S</p>
+            <ul>
+                <li>1. Nama</li>
+                <li>2. Nama</li>
+                <li>3. Nama</li>
+                <li>4. Nama</li>
+                <li>5. Nama</li>
+            </ul>
+        </div>
+        <div class="form-box">
+            <h2>Prediksi Harga</h2>
+            <p>Silahkan isi data berikut.</p>
+            <form action="/predict" method="post">
+                <div class="form-group">
+                    <label for="lebar_bangunan">Lebar Bangunan:</label>
+                    <input type="text" id="lebar_bangunan" name="lebar_bangunan" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lebar_tanah">Lebar Tanah:</label>
+                    <input type="text" id="lebar_tanah" name="lebar_tanah" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jumlah_kamar_tidur">Jumlah Kamar Tidur:</label>
+                    <input type="text" id="jumlah_kamar_tidur" name="jumlah_kamar_tidur" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jumlah_kamar_mandi">Jumlah Kamar Mandi:</label>
+                    <input type="text" id="jumlah_kamar_mandi" name="jumlah_kamar_mandi" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jumlah_kapasitas_mobil_dan_garasi">Jumlah Kapasitas Mobil dan Garasi:</label>
+                    <input type="text" id="jumlah_kapasitas_mobil_dan_garasi" name="jumlah_kapasitas_mobil_dan_garasi" required>
+                </div>
+                
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

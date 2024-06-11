@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Properti - SIPS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="result-box">
+            <h1>Prediksi Harga Properti dengan Memanfaatkan Informasi Siteplan</h1>
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Lebar Bangunan</td>
+                    <td>{{ result['Lebar Bangunan'] }}</td>
+                </tr>
+                <tr>
+                    <td>Lebar Tanah</td>
+                    <td>{{ result['Lebar Tanah'] }}</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Kamar Tidur</td>
+                    <td>{{ result['Jumlah Kamar Tidur'] }}</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Kamar Mandi</td>
+                    <td>{{ result['Jumlah Kamar Mandi'] }}</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Kapasitas Mobil dan Garasi</td>
+                    <td>{{ result['Jumlah Kapasitas Mobil dan Garasi'] }}</td>
+                </tr>
+                <tr>
+                    <td>Prediksi Harga</td>
+                    <td>{{ result['Prediction'] }}</td>
+                </tr>
+            </table>
+            <div class="explanation">
+                <p>Prediksi harga properti di atas didasarkan pada parameter yang diberikan:</p>
+                <ul>
+                    <li>Lebar Bangunan: {{ result['Lebar Bangunan'] }} meter persegi.</li>
+                    <li>Lebar Tanah: {{ result['Lebar Tanah'] }} meter persegi.</li>
+                    <li>Jumlah Kamar Tidur: {{ result['Jumlah Kamar Tidur'] }} kamar tidur</li>
+                    <li>Jumlah Kamar Mandi: {{ result['Jumlah Kamar Mandi'] }} kamar mandi</li>
+                    <li>Jumlah Kapasitas Mobil dan Garasi: {{ result['Jumlah Kapasitas Mobil dan Garasi'] }} kapasitas mobil</li>
+                </ul>
+                <p>Faktor-faktor tersebut dapat mempengaruhi harga properti secara signifikan.</p>
+            </div>
+            <a href="/">Kembali</a>
+        </div>
+    </div>
+</body>
+</html>

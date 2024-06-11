@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, red, blue, purple);
+    margin: 0;
+    padding: 0;
+    color: #000; /* Warna teks default */
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Menambahkan jarak antara elemen dalam container */
+    padding: 20px;
+}
+
+.info-box, .form-box {
+    width: 100%;
+    padding: 20px;
+    background: #fff; /* Latar belakang kotak putih */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #000; /* Warna teks hitam agar kontras dengan background kotak */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000; /* Warna teks hitam agar kontras dengan background kotak */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff; /* Latar belakang tabel putih */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Latar belakang header tabel sedikit lebih gelap */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff; /* Warna teks tautan */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tambahkan ini di akhir file CSS */
+
+.result-box {
+    width: 80%; /* Perbesar kotak hasil */
+    margin: auto;
+    padding: 40px;
+    background: #fff; /* Latar belakang kotak putih */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Menambahkan jarak antara kotak hasil dan tombol Kembali */
+    text-align: center; /* Pusatkan teks */
+}
+
+.result-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.result-box th, .result-box td {
+    padding: 20px; /* Perbesar padding sel */
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.result-box th {
+    background-color: #f2f2f2; /* Latar belakang header tabel sedikit lebih gelap */
+}
+
+.result-box p {
+    margin-top: 30px;
+}
+
+.result-box a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #007bff; /* Warna teks tautan */
+}
+
+.result-box a:hover {
+    text-decoration: underline;
+}
+
